@@ -1,0 +1,20 @@
+{
+  "name": "kimmo.io",
+  "version": "1.0.0",
+  "description": "Kimmo Tuupanen - Portfolio",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Kimmo Tuupanen",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "ionicons": "^7.0.0",
+    "jquery": "^3.6.3"
+  }
+}
