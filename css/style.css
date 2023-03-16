@@ -7,6 +7,7 @@
     2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 /* ================================================= */
 /* Custom properties */
@@ -88,7 +89,7 @@
   --icon-socials: var(--primary-text);
   --icon-socials-hover: #b1b0b5;
 
-  --modal-content-brightness: brightness(90%);
+  --modal-content-brightness: brightness(80%);
 
   --link-icon: #002749;
 }
@@ -173,22 +174,44 @@ body {
   grid-row: 2;
 }
 
-.animate-shadow {
+.fade-in--first {
   display: inline-block;
-  animation: 1s slidein ease-in-out;
+  animation: 1.2s fadeInFirst ease-in-out;
 }
 
-.animate-shadow--delay {
-  animation: slidein 0.8s ease-in-out;
+.fade-in--second {
+  display: inline-block;
+  animation: fadeInSecond 2s ease-in-out;
 }
 
-@keyframes slidein {
-  from {
+@keyframes fadeInFirst {
+  0% {
     opacity: 0;
-    transform: translateY(-225px);
+    transform: translateX(15px);
   }
-  to {
-    transform: translate(0);
+  50% {
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSecond {
+  0% {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -306,9 +329,9 @@ body {
   border-radius: 50px;
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1.4rem;
   cursor: pointer;
-  padding: 0.55rem;
+  padding: 0.6rem;
   position: relative;
   transition: var(--default-transition);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.1);
@@ -317,27 +340,25 @@ body {
 .theme-switcher::before {
   content: "";
   position: absolute;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.25rem;
+  height: 2.25rem;
   background-color: var(--switch-circle-bg);
   border-radius: 50px;
-  left: 0;
+  left: 0px;
   transform: translateX(var(--switch-circle-pos));
-  transition: var(--default-transition);
-}
-
-.theme-switcher svg {
   transition: var(--default-transition);
 }
 
 .icon-sun {
   color: var(--icon-sun);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  z-index: 2;
 }
 
 .icon-moon {
   color: var(--icon-moon);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  z-index: 2;
 }
 
 /* ================================================= */
@@ -501,8 +522,8 @@ body {
 }
 
 .certificate-icon {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .work-link:link,
@@ -562,7 +583,7 @@ body {
 }
 
 .social-icon--link {
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   color: var(--icon-socials);
   margin: 0 1rem;
   display: inline-block;
@@ -571,7 +592,7 @@ body {
 
 .social-icon--link:hover {
   transform: translateY(-5px);
-  /* color: var(--link-hover); */
+  color: var(--link-hover);
   /* color: var(--icon-socials-hover); */
 }
 
@@ -629,50 +650,6 @@ body {
   visibility: hidden;
   opacity: 0;
 }
-
-/* Optional modal window */
-
-/* .modal {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin-top: -1px;
-  animation: zoom 0.3s ease-in-out;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.modal img {
-  width: 50%;
-  object-fit: cover;
-}
-
-.closeBtn {
-  color: rgba(255, 255, 255, 0.87);
-  font-size: 2.5rem;
-  position: absolute;
-  top: 120px;
-  right: 40px;
-  margin: 2rem;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-}
-
-.closeBtn:hover {
-  color: rgb(255, 255, 255);
-} */
 
 /* ================================================= */
 /* 1000px */

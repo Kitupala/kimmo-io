@@ -48,24 +48,18 @@
     />
 
     <!-- CSS -->
-    <script
-      async
-      src="https://kit.fontawesome.com/6cc05e1e8e.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Kimmo Tuupanen | Portfolio</title>
   </head>
   <body onload="gradMouse()">
-    <!-- <body> -->
     <header class="header">
-      <a href="#hero" class="smoscr">
+      <a href="#hero" class="smooth-scroll">
         <img class="logo" src="img/kt-logo-bluish.svg" alt="kimmo.io" />
       </a>
       <div class="theme-switcher">
-        <ion-icon name="sunny-outline" class="icon-sun"></ion-icon>
-        <ion-icon name="moon-outline" class="icon-moon"></ion-icon>
+        <i class="bi bi-brightness-high icon-sun" title="Light"></i>
+        <i class="bi bi-moon icon-moon" title="Dark"></i>
       </div>
     </header>
 
@@ -77,15 +71,12 @@
             <div class="grid grid--2-cols grid--hero">
               <h1 class="heading-primary">
                 Hello I'm
-                <span class="shadow-text animate-shadow">Kimmo</span>
+                <span class="shadow-text fade-in--first">Kimmo</span>
                 <!-- <span class="dark">Kimmo</span> -->
               </h1>
               <p class="subheading">
                 Self-taught, self-motivated web
-                <span
-                  class="grow shadow-text animate-shadow animate-shadow--delay"
-                  >designer.</span
-                >
+                <span class="grow shadow-text fade-in--second">designer.</span>
                 <br />
                 I'm a pixel perfectionist &mdash; in a good way.
               </p>
@@ -114,7 +105,7 @@
               my black Corvette &prime;77.
             </p>
             <div class="scroll-down">
-              <a href="#work" class="scroll smoscr"></a>
+              <a href="#work" class="scroll smooth-scroll"></a>
             </div>
           </div>
         </div>
@@ -173,7 +164,7 @@
                   </a>
                   <a href="#udemy" class="work-link udemy btn--show-modal">
                     <svg
-                      data-certificate="./img/css-cert.webp"
+                      data-certificate="css-cert.jpg"
                       role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +228,7 @@
                   </a>
                   <a href="#udemy" class="work-link udemy btn--show-modal">
                     <svg
-                      data-certificate="./img/js-cert.jpg"
+                      data-certificate="js-cert.jpg"
                       role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -301,7 +292,7 @@
                   </a>
                   <a href="#udemy" class="work-link udemy btn--show-modal">
                     <svg
-                      data-certificate="./img/tid-cert.jpg"
+                      data-certificate="tid-cert.jpg"
                       role="img"
                       viewBox="0 0 24 24"
                       xmlns="http://www.w3.org/2000/svg"
@@ -365,69 +356,26 @@
           <div class="footer">
             <ul class="social-icon">
               <li class="social-icon--item">
-                <a
-                  class="social-icon--link"
-                  href="https://linkedin.com/in/kimmotuupanen"
-                  target="_blank"
-                >
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                <a href="https://linkedin.com/in/kimmotuupanen" target="_blank">
+                  <i class="bi bi-linkedin social-icon--link"></i>
                 </a>
               </li>
               <li class="social-icon--item">
-                <a class="social-icon--link" href="#">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                <a href="#">
+                  <i class="bi bi-facebook social-icon--link"></i>
                 </a>
               </li>
               <li class="social-icon--item">
-                <a
-                  class="social-icon--link"
-                  href="https://github.com/Kitupala?tab=repositories"
-                  target="_blank"
-                >
-                  <ion-icon name="logo-github"></ion-icon>
+                <a href="https://github.com/Kitupala" target="_blank">
+                  <i class="bi bi-github social-icon--link"></i>
                 </a>
               </li>
               <li class="social-icon--item">
-                <a
-                  class="social-icon--link"
-                  href="mailto:kimmo.tuupanen@gmail.com"
-                >
-                  <ion-icon name="mail"></ion-icon>
+                <a href="mailto:kimmo.tuupanen@gmail.com">
+                  <i class="bi bi-envelope-at-fill social-icon--link"></i>
                 </a>
               </li>
-              <!-- <li class="social-icon--item">
-                <a class="social-icon--link" href="#">
-                  <svg viewBox="0 0 128 113" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                      <path
-                        d="M80.4595 74.6047H71.6825L70.9494 73.8717V53.3259C70.9494 49.6705 69.513 46.8372 65.1047 46.7382C62.8361 46.6787 60.2406 46.7382 57.4669 46.8471L57.0508 47.2731V55.5746V73.8618L56.3177 74.5948H47.5407L46.8076 73.8618V38.7636L47.5407 38.0305H67.294C74.9714 38.0305 81.1926 44.2517 81.1926 51.9291V73.8717L80.4595 74.6047Z"
-                      ></path>
-                    </g>
-                    <g>
-                      <path
-                        d="M34.5931 94.0509H33.3845L27.3516 88.0179V86.8094L36.5744 77.5866H42.964L43.8159 78.4385V84.8281L34.5931 94.0509Z"
-                      ></path>
-                      <path
-                        d="M27.3516 25.816V24.6074L33.3845 18.5744H34.5931L43.8159 27.7972V34.1868L42.964 35.0388H36.5744L27.3516 25.816Z"
-                      ></path>
-                      <path
-                        d="M35.8412 61.4491H0.73307L0 60.716V51.9192L0.73307 51.1861H35.8412L36.5743 51.9192V60.716L35.8412 61.4491Z"
-                      ></path>
-                      <path
-                        d="M127.277 61.4491H92.1686L91.4355 60.716V51.9192L92.1686 51.1861H127.277L128.01 51.9192V60.716L127.277 61.4491Z"
-                      ></path>
-                      <path
-                        d="M58.9429 27.0642V0.73307L59.6759 0H68.4728L69.2059 0.73307V27.0642L68.4728 27.7972H59.6759L58.9429 27.0642Z"
-                      ></path>
-                      <path
-                        d="M58.9429 111.902V85.5711L59.6759 84.838H68.4728L69.2059 85.5711V111.902L68.4728 112.635H59.6759L58.9429 111.902Z"
-                      ></path>
-                    </g>
-                  </svg>
-                </a>
-              </li> -->
             </ul>
-
             <p>
               <span class="year">1997</span> Ⓒopyright Kimmo Tuupanen | All
               Rights Reserved
@@ -437,8 +385,7 @@
       </section>
     </main>
 
-    <footer></footer>
-
+    <!-- <footer></footer> -->
     <!-- Modal window -->
     <div class="modal hidden">
       <button class="btn--close-modal">&times;</button>
@@ -446,23 +393,11 @@
     <div class="overlay hidden"></div>
 
     <script defer src="js/script.js"></script>
-
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
       integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-
-    <!-- <script
-      type="module"
-      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule=""
-      src="https://unpkg.com/ionicons@latest/dist/ionicons/ionicons.js"
-    ></script> -->
-
-    <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script>
   </body>
 </html>
