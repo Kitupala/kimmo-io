@@ -14,6 +14,7 @@ function smoothScroll(e) {
     behavior: "smooth",
   });
 }
+seamless.polyfill();
 
 /* ================================================= */
 /* Switch theme function */
