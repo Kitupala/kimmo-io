@@ -24,9 +24,11 @@
   --about-text: var(--primary-text);
 
   --primary-text: #495057;
+
   --highlight-text: #000428;
   --muted-text: #77757e;
   --shadow-text: #fff;
+  --react-shadow-text: #61d9fb;
   --shadow-color: rgba(0, 4, 40, 0.5);
 
   --border-bottom: #cccdd4;
@@ -68,6 +70,8 @@
   --highlight-text: #000428;
   --muted-text: #002749;
   --shadow-text: rgba(0, 78, 146, 0.9);
+  /* --react-shadow-text: #61d9fb; */
+  --react-shadow-text: rgba(0, 78, 146, 0.9);
   --shadow-color: rgba(0, 4, 40, 0.6);
 
   --border-bottom: #333653;
@@ -471,7 +475,7 @@ body {
 
 .section-work {
   padding-top: 16rem;
-  padding-bottom: 9.6rem;
+  padding-bottom: 4.8rem;
   background-color: var(--section-work-bg);
 }
 
@@ -545,6 +549,21 @@ body {
   line-height: 1.6;
   margin-bottom: 1.2rem;
   color: var(--primary-text);
+}
+
+/* ================================================= */
+/* Under construction */
+/* ================================================= */
+.section-construction {
+  width: 80rem;
+  padding: 9.6rem 6.4rem 0 6.4rem;
+  margin: 0 auto;
+}
+
+.react-shadow-text {
+  color: var(--react-shadow-text);
+  /* text-shadow: 2px 4px 12px var(--shadow-color); */
+  transition: var(--default-transition);
 }
 
 /* ================================================= */
