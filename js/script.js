@@ -38,6 +38,13 @@ const switchTheme = () => {
   newTheme === "dark"
     ? bgGradient.classList.add("radial-gradient")
     : bgGradient.classList.remove("radial-gradient");
+
+  const hideWorkImgs = document.querySelectorAll(".work-img");
+  hideWorkImgs.forEach((item) => {
+    newTheme === "dark"
+      ? item.classList.add("hide")
+      : item.classList.remove("hide");
+  });
 };
 
 // Add event listener for the switchTheme
